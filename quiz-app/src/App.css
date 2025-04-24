@@ -1,9 +1,10 @@
 body {
   font-family: Arial, sans-serif;
+  color: #f5f5f5;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("https://i.pinimg.com/736x/4d/40/90/4d4090314f3b1cd48855f8d305e936d7.jpg");
+  background-image: url(C:\Users\Honey\Documents\Marian\background\bg2.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -16,31 +17,40 @@ body {
 .container {
   width: 800px; 
   padding: 40px; 
-  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #16471d;
   text-align: center;
 }
-
 
 h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .options {
-  display: contents;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
 .option {
   padding: 10px;
-  border: 1px solid #000000;
+  border: 1px solid #96f39f;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
 }
+
+.option.correct {
+  background-color: #4CAF50; /* green */
+  color: white;
+}
+
+.option.wrong {
+  background-color: #f44336; /* red */
+  color: white;
+}
+
 
 .option:hover {
   background-color: #9ad09d;
@@ -64,5 +74,5 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #096fdb;
 }

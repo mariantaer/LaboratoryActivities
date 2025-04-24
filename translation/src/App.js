@@ -7,18 +7,33 @@ function App() {
 
   const translateWord = () => {
     const translations = {
-      hello: 'kamusta',
-      world: 'mundo',
-      example: 'halimbawa',
-      love: 'pag-ibig',
-      ghost: 'multo',
-      cold: 'malamig',
-      read: 'basahin',
-      calendar: 'talaarawan',
-      airplane: 'salipapaw',
-      cheap:'mura',
-    };
-
+    hello: 'kamusta',
+    world: 'mundo',
+    example: 'halimbawa',
+    love: 'pag-ibig',
+    ghost: 'multo',
+    cold: 'malamig',
+    read: 'basahin',
+    calendar: 'talaarawan',
+    airplane: 'salipapaw',
+    cheap: 'mura',
+    water: 'tubig',
+    fire: 'apoy',
+    house: 'bahay',
+    school: 'paaralan',
+    friend: 'kaibigan',
+    family: 'pamilya',
+    food: 'pagkain',
+    sleep: 'tulog',
+    work: 'trabaho',
+    happy: 'masaya',
+    sad: 'malungkot',
+    fast: 'mabilis',
+    slow: 'mabagal',
+    dog: 'aso',
+    cat: 'pusa'
+  };
+  
     const translation = translations[englishWord.toLowerCase()];
     setTagalogTranslation(translation || 'Translation not found');
   };
@@ -26,6 +41,7 @@ function App() {
   return (
     <div className="container">
       <h1>English to Tagalog Translator</h1>
+      <h2>english Word</h2>
       <div className="input-group">
         <label>English Word:</label>
         <input type="text" value={englishWord} onChange={(e) => setEnglishWord(e.target.value)} />
@@ -33,7 +49,7 @@ function App() {
       <button onClick={translateWord}>Translate</button>
       {tagalogTranslation && (
         <div>
-        <h2>Tagalog Translation:</h2>
+        <h3>Tagalog Translation:</h3>
         <p>{tagalogTranslation}</p>
       </div>
     )}

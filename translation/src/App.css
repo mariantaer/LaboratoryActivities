@@ -1,24 +1,28 @@
 body {
   font-family: Arial, sans-serif;
+  color: #f5f5f5;
   margin: 0;
   padding: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  background-image: url(https://assets.housingsnap.com/uploads/paragraph/image/347245/ed5b1390da91ad9193f45ec483f12159_watermark.jpg);
+  background-image: url(C:\Users\Honey\Documents\Marian\background\bg2.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-size: 16px;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .container {
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: #16471d;
   text-align: center;
   max-width: 600px;
   width: 300%;
@@ -26,13 +30,13 @@ body {
 }
 
 .input-group {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 input {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #16471d;
   width: 100%;
   box-sizing: border-box;
   font-size: 18px;
@@ -44,11 +48,18 @@ button {
   border-radius: 5px;
   border: none;
   background-color: #6696c6;
-  color: #fff;
+  color: #16471d;
   cursor: pointer;
   font-size: 16px;
+  margin-top: -10px;
+
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
 }
