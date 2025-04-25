@@ -41,15 +41,14 @@ function App() {
   return (
     <div className="container">
       <h1>English to Tagalog Translator</h1>
-      <h2>english Word</h2>
       <div className="input-group">
         <label>English Word:</label>
         <input type="text" value={englishWord} onChange={(e) => setEnglishWord(e.target.value)} />
       </div>
       <button onClick={translateWord}>Translate</button>
       {tagalogTranslation && (
-        <div>
-        <h3>Tagalog Translation:</h3>
+    <div className="translation-output">       
+        <h2>Tagalog Translation:</h2>
         <p>{tagalogTranslation}</p>
       </div>
     )}
